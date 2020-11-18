@@ -14,8 +14,6 @@ router.post("/", async (req,res)=>{
 
     try{
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-    // console.log("Markup:",req.body.html)
     
     const msg = {
     to: req.body.to_email,
