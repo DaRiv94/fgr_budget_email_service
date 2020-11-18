@@ -25,7 +25,8 @@ router.post("/", async (req,res)=>{
     html: req.body.html,
     };
 
-    console.log("msg:",msg)
+    // console.log("msg:",msg)
+    console.log("SEND_EMAIL: ",process.env.SEND_EMAIL)
 
     if(process.env.SEND_EMAIL == 'true'){
         let response = await sgMail.send(msg);
