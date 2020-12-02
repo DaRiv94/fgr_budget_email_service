@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const sgMail = require('@sendgrid/mail');
 
+//I want to make this constant an env var in the future
 const FROM_EMAIL = "noreply@frankieriviera.com"
 
 //Email notification endpoint /notification
@@ -39,7 +40,6 @@ router.post("/", async (req,res)=>{
     }
     }catch(ex){
 
-        // return res.status(500).json({Error:JSON.stringify(ex)})
         return res.status(500).json({Error:ex})
 
     }

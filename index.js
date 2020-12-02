@@ -8,8 +8,6 @@ const cors = require("cors");
 const verificationRoutes = require('./routes/verification.js');
 const notificationRoutes = require('./routes/notification');
 
-
-
 // parse application/json
 app.use(bodyParser.json())
 
