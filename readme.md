@@ -1,6 +1,6 @@
 
 
-# FGR Budget Backend
+# FGR Budget Email Service
 
 [<img src="./images/1000x1000_FGR_FINANCE.png" width="100" >](https://fgr-kubernetes-demo.northcentralus.cloudapp.azure.com)
 
